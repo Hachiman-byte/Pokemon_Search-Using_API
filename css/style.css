@@ -7,22 +7,37 @@
 #main_content{
     margin: 0 auto 0 auto;
     padding: 5%;
+    display: none;
 }
 #search_section{
     margin-bottom: 25px;
+    padding: 1rem;
+    display: flex;
+    gap: 5px;
+    justify-content: center ;
+    flex-wrap: wrap;
 }
 #search_section #fetchBTN{
     padding: 12px;
     font-weight: 800;
+    flex-basis: 300;
 }
 button{
     cursor: pointer;
 }
 #sprite_container{
-
+    align-content: center;
+    max-width: 180px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+audio{
+    width: 100%;
 }
 #inputtedName{
-    min-width: 200px;
+    width: 30%;
     border: 1px solid black;
     border-radius: 5px;
     font-size: medium;
@@ -34,8 +49,9 @@ button{
 }
 #pokemonImage{
     image-rendering: pixelated;
-    width: 150px;
     background-color: rgb(233, 233, 233);
+    width: 100%;
+    border-radius: 15px;
 }  
 p{
     font-family: 'Courier New', Courier, monospace;
@@ -44,6 +60,10 @@ p{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 10px;
 }
 .contents .container{
     line-height: 1.3em;
@@ -65,7 +85,7 @@ p{
 }
 .inline-items{
     display: flex;
-    margin: 0 0 0 1em;
+    margin: 0 1em 0 1em;
 }
 .inline-items:last-child{
     margin-bottom: 1em;

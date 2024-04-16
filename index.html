@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="search_section">
+        <input type="text" id="inputtedName">
+        <button onclick="getData()" id="fetchBTN">Search</button>
+    </div>  
     <div id="main_content">
-        <div id="search_section">
-            <input type="text" id="inputtedName">
-            <button onclick="getData()" id="fetchBTN">Search</button>
-        </div>
         <div class="contents first_content">
             <div id="sprite_container">
                 <img src="" alt="pokemon_sprite" id="pokemonImage">
+                <audio autoplay controls id="cries_audio"></audio>
             </div>
             <div class="container">
                 <div class="content-label"><h3>Stats</h3></div>
