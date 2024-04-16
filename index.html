@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <div>
+    <div id="main_content">
+        <div id="search_section">
             <input type="text" id="inputtedName">
-            <button onclick="getData()" id="fetchBTN">Fetch Pokemon</button>
+            <button onclick="getData()" id="fetchBTN">Search</button>
         </div>
-        <img src="" alt="pokemon_sprite" id="pokemonImage">
-        <script src="js/main.js"></script>
+        <div class="contents first_content">
+            <div id="sprite_container">
+                <img src="" alt="pokemon_sprite" id="pokemonImage">
+            </div>
+            <div class="container">
+                <div class="content-label"><h3>Stats</h3></div>
+                <div class="inline-items"><strong>HP: </strong><p id="healthtxt"></p></div>
+                <div class="inline-items"><strong>Attack: </strong><p id="attacktxt"></p></div>
+                <div class="inline-items"><strong>Defense: </strong><p id="defensetxt"></p></div>
+                <div class="inline-items"><strong>Special Attack: </strong><p id="specialattacktxt"></p></div>
+                <div class="inline-items"><strong>Special Defense: </strong><p id="specialdefensetxt"></p></div>
+                <div class="inline-items"><strong>Speed: </strong><p id="speedtxt"></p></div>
+            </div>       
+        </div>
+        
     </div>
-    
+    <script src="js/main.js"></script>
 </body>
 </html> 
