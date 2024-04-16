@@ -35,7 +35,7 @@ button{
 #pokemonImage{
     image-rendering: pixelated;
     width: 150px;
-    background-color: red;
+    background-color: rgb(233, 233, 233);
 }  
 p{
     font-family: 'Courier New', Courier, monospace;
